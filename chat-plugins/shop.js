@@ -145,10 +145,7 @@ exports.commands = {
 		var parts = target.split(',');
 		var output = '';
 
-		function link(link, formatted) {
-			return '<a href="' + link + '" target="_blank">' + formatted + '</a>';
-		}
-		function nameColor(name) {
+	        function link (formatted) {            return '<a href="' + '" target="_blank">' +                formatted + '</a>';        }	function nameColor(name) {
 			return '<b><font color="' + Gold.hashColor(toId(name)) + '">' + Tools.escapeHTML(name) + '</font></b>';
 		}
 		function moneyCheck(price) {
